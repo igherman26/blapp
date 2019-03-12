@@ -26,3 +26,4 @@ class CommentViewSet(viewsets.ModelViewSet):
 class LikeViewSet(viewsets.ModelViewSet):
     queryset = Like.objects.all().order_by('-created_at')
     serializer_class = LikeSerializer
+    

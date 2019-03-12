@@ -20,13 +20,13 @@ class ProfileSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Profile
         fields = ('username', 'friends', 'friends_requests', 'age', 'sex',
-                    'bio', 'picture', 'created_at')
+                    'bio', 'picture', 'picture_thumbnail', 'created_at')
 
 
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Post
-        fields = ('user', 'text', 'picture', 'created_at')
+        fields = ('user', 'text', 'picture', 'picture_standardized', 'created_at')
 
 
 class LikeSerializer(serializers.HyperlinkedModelSerializer):

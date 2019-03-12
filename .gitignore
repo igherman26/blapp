@@ -1,6 +1,6 @@
 venv-django
 extra
+media
 *.vscode
 *__pycache__
 *migrations
-*settings.py
